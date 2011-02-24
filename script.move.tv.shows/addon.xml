@@ -10,7 +10,7 @@
              library="default.py" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">script.move.tv.shows</summary>    
-    <description lang="en">XBMC Add-On for moving tv shows from one directory to another, the optionally scanning into the Video Library.</description>
+    <description lang="en">XBMC Add-On for moving tv shows from one directory to another, then optionally scanning into the Video Library. This is useful if you want to move your Handbrake converted tv shows from a temp directory, to your main media drive, and automatically scan the files into the Video Library.</description>
     <platform>all</platform>
   </extension>
 </addon>
