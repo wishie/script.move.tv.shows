@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="30100">
+      <setting id="source" type="folder" source="video" label="30101" default="" />
+      <setting id="dest1" type="folder"  source="video" label="30102" default="" />
+      <setting id="dest2" type="folder"  source="video" label="30102" default="" />
+      <setting id="dest3" type="folder"  source="video" label="30102" default="" />
+      <setting id="dest4" type="folder"  source="video" label="30102" default="" />
+      <setting id="dest5" type="folder"  source="video" label="30102" default="" />
+    </category>
+    <category label="30103">
+      <setting id="delete" type="bool" label="30104" default="false"/>
+      <setting id="scan" type="bool" label="30105" default="false"/>
+    </category>
+</settings>
