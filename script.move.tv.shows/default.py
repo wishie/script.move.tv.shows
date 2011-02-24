@@ -123,11 +123,7 @@ def search(pDialog):
                   season_dir = os.path.join(show_path, season_dir % int(season))
                   if os.path.exists(season_dir):
                     copy_list.append({'filename':file_location, 'destination':season_dir})
-                    if len(copy_list) == 1: 
-                      files = ""
-                    else:
-                      files = "s"
-                    pDialog.update(0, __language__(614) % (len(copy_list), files,))                   
+                    pDialog.update(0, __language__(614) % (len(copy_list),))                   
     return copy_list
 
 def log(msg):

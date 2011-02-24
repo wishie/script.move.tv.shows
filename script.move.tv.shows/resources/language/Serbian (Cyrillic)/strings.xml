@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<strings>
+
+  <!-- Serbian (Cyrillic) -->
+
+  <string id="610">Тражим Серије</string>
+  <string id="612">Копирам %i од %i фајлова</string>
+  <string id="614">Пронађено %i фајлова за копирање</string>
+
+  <!-- Script Settings -->
+
+  <string id="30100">Генералне Поставке</string>
+  <string id="30101">Изаберите локацију фајлова</string>
+  <string id="30102">Изаберите локацију серија</string>
+  <string id="30103">Напредне Поставке</string>
+  <string id="30104">Обриши фајлове после копирања</string>
+  <string id="30105">Скенирај видео датотеку после копорања</string>
+
+</strings>
