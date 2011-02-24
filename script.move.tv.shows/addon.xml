@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addon id="script.move.tv.shows"
        name="Move TV Shows"
-       version="0.0.3"
+       version="0.0.4"
        provider-name="wishie">
   <requires>
     <import addon="xbmc.python" version="1.0"/>
@@ -10,7 +10,7 @@
              library="default.py" />
   <extension point="xbmc.addon.metadata">
     <summary lang="en">script.move.tv.shows</summary>    
-    <description lang="en"></description>
+    <description lang="en">XBMC Add-On for moving tv shows from one directory to another, the optionally scanning into the Video Library.</description>
     <platform>all</platform>
   </extension>
 </addon>
