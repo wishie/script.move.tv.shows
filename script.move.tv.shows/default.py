@@ -144,3 +144,4 @@ pDialog.close()
 
 if (len(copy_list) > 0) and (__settings__.getSetting( "scan" ) == "true"):
   xbmc.executebuiltin('UpdateLibrary(video)')
+  xbmc.executebuiltin("RunScript(script.recentlyadded,limit=5&albums=True&totals=True)")

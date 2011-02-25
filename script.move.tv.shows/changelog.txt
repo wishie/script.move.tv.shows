@@ -1,5 +1,11 @@
-0.0.4
+0.0.6
+added: update recently added after scan
+
+0.0.5
 added: Serbian language localization
+
+0.0.4
+cosmetics
 
 0.0.3
 initial commit
