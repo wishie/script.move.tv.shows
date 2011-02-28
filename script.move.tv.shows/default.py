@@ -115,6 +115,7 @@ def search(pDialog):
             for dest_dir in dest:
               directories = os.listdir(dest_dir)
               for d in directories:
+                show_path = ""
                 if d.lower() == title.lower():
                   show_path = os.path.join(dest_dir, d)
                   break
