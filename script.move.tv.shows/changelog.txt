@@ -1,3 +1,6 @@
+0.0.8
+very minor tidy up.
+
 0.0.7
 fixed: script would fail if tv show file didnt have a matching destination directory.
 

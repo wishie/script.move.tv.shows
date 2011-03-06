@@ -115,10 +115,11 @@ def search(pDialog):
             for dest_dir in dest:
               directories = os.listdir(dest_dir)
               for d in directories:
-                show_path = ""
                 if d.lower() == title.lower():
                   show_path = os.path.join(dest_dir, d)
                   break
+                else:
+                  show_path = ""
               if show_path != "":
                 for season_dir in season_dirs:
                   season_dir = os.path.join(show_path, season_dir % int(season))
