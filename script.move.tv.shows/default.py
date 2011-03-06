@@ -105,11 +105,10 @@ def search(pDialog):
             ################ add more cases on here #################
             
             if title == "Law and Order SVU" : title = "Law & Order - Special Victims Unit"
-            
+            if title == "CSI NY" : title = "CSI New York" 
+
             #########################################################
-          except:
-            title = ""
-          if title != "":
+
             log( "Found [%s], Season [%s] - Episode [%s]" % (title, season, episode))
             file_location = os.path.join(file_root, name)
             for dest_dir in dest:
@@ -117,15 +116,14 @@ def search(pDialog):
               for d in directories:
                 if d.lower() == title.lower():
                   show_path = os.path.join(dest_dir, d)
-                  break
-                else:
-                  show_path = ""
-              if show_path != "":
-                for season_dir in season_dirs:
-                  season_dir = os.path.join(show_path, season_dir % int(season))
-                  if os.path.exists(season_dir):
-                    copy_list.append({'filename':file_location, 'destination':season_dir})
-                    pDialog.update(0, __language__(614) % (len(copy_list),))                   
+                  for season_dir in season_dirs:
+                    season_dir = os.path.join(show_path, season_dir % int(season))
+                    if os.path.exists(season_dir):
+                      copy_list.append({'filename':file_location, 'destination':season_dir})
+                      pDialog.update(0, __language__(614) % (len(copy_list),))
+                      break
+          except:
+            pass
     return copy_list
 
 def log(msg):
